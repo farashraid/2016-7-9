@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+
+		 
+		int number;
+		String sR = null;
+		String sS = null;
+		
+		Scanner in = new Scanner(System.in);
+		number = in.nextInt();
+		if((number - number%10)/10==1)
+		{
+			sR = "unreadable";
+		}
+		else if((number - number%10)/10==2)
+		{
+			sR = "barely readable, occasional words distinguishable";
+		}
+		else if((number - number%10)/10==3)
+		{
+			sR = "readable with considerable difficulty";
+		}
+		else if((number - number%10)/10==4)
+		{
+			sR = "readable with practically no difficulty";
+		}
+		else if((number - number%10)/10==5)
+		{
+			sR = "perfectly readable";
+		}
+		
+		
+		if(number%10==1)
+		{
+			sS = "Faint signals, barely perceptible";
+		}
+		if(number%10==2)
+		{
+			sS = "Very weak signals";
+		}
+		if(number%10==3)
+		{
+			sS = "Weak signals";
+		}
+		if(number%10==4)
+		{
+			sS = "Fair signals";
+		}
+		if(number%10==5)
+		{
+			sS = "Fairly good signals";
+		}
+		if(number%10==6)
+		{
+			sS = "Good signals";
+		}
+		if(number%10==7)
+		{
+			sS = "Moderately strong signals";
+		}
+		if(number%10==8)
+		{
+			sS = "Strong signals";
+		}
+		if(number%10==9)
+		{
+			sS = "Extremely strong signals";
+		}
+		System.out.println(sS +","+" "+ sR +".");
+		
+	}
+}
