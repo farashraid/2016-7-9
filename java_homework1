@@ -7,7 +7,6 @@ public class Main {
 		float hua;
 		int she;
 		Scanner in = new Scanner(System.in);
-		System.out.println("请输入华氏度:");
 		hua = in.nextFloat();
 		she = (int) ((hua - 32)*5/9);
 		System.out.println("华氏度是:"+she);
