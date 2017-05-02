@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){		
+		int beijing;
+		int shijie = 0;
+		Scanner in = new Scanner(System.in);
+		beijing = in.nextInt();
+		if(beijing<=100&&beijing>=0){
+			shijie = 16*100+beijing;
+		}
+		else if(beijing<800&&beijing>100)
+		{
+			shijie = beijing%100 + (24-8+(beijing-beijing%100)/100)*100;
+		}
+		else if(beijing>=800&&beijing<=2359)
+		{
+			shijie = beijing%100 + ((beijing-beijing%100)/100-8)*100; 
+		}
+		System.out.println(shijie);
+	}
+}
+ 
